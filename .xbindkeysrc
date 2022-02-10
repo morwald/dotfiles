@@ -1,0 +1,23 @@
+# increase volume
+"/home/moritz/.scripts/volumecontrol up"
+  XF86AudioRaiseVolume
+
+# decrease volume
+"/home/moritz/.scripts/volumecontrol down"
+  XF86AudioLowerVolume
+
+# mute volume
+"/home/moritz/.scripts/volumecontrol mute"
+  XF86AudioMute
+
+# mute microphone
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+  XF86AudioMicMute
+
+# increase brightness
+"/home/moritz/.scripts/brightnesscontrol up"
+  XF86MonBrightnessUp
+
+# decrease brightness
+"/home/moritz/.scripts/brightnesscontrol down"
+  XF86MonBrightnessDown

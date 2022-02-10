@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# ch keyboard layout
+setxkbmap -layout ch
+
+# caps lock is escape
+setxkbmap -option caps:escape
+
+# notification with dunst
+dunstify -r 7777 -u normal "Display profile" "$AUTORANDR_CURRENT_PROFILE"
