@@ -14,13 +14,15 @@ setxkbmap -layout ch
 # caps lock is escape
 setxkbmap -option caps:escape
 
+# start mpd 
+[ ! -s ~/.mpd/pid ] && mpd
+
 # programs running in background
 picom &
 xbindkeys &
 dunst &
 udiskie &
 unclutter &
-mpd &
 xautolock -time 10 -locker slock &
 
 # excecute dwm in forground
